@@ -66,6 +66,7 @@ public class VersionUpdateUtils {
             e.printStackTrace();
         } catch (JSONException e) {
             e.printStackTrace();
+
         }
 
     }
