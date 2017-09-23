@@ -47,6 +47,7 @@ public class HomeActivity extends AppCompatActivity {
                 mExitTime=System.currentTimeMillis();
             }
                 return true;
+            
         }
         return super.onKeyDown(keyCode,event);
     }
