@@ -8,12 +8,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
+
+import android.os.Message;
 import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-//import org.apache.http.MessageConstraintException;
-import org.apache.http.client.ClientProtocolException;
+
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -128,7 +129,7 @@ public class VersionUpdateUtils {
         builder.setMessage(versionEntity.description);
         builder.setCancelable(false);
         builder.setIcon(R.mipmap.ic_launcher_round);
-        builder.setPositiveButton("立刻升级", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("立刻升级", new  DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 downloadNewApk(versionEntity.apkurl);
@@ -154,11 +155,6 @@ public class VersionUpdateUtils {
         DownloadUtils downloadUtils=new DownloadUtils();
         downloadUtils.downloadApk(apkurl,"mobileguard.apk",context);
     }
-
-
-
-
-
 
 
 

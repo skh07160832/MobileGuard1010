@@ -1,7 +1,7 @@
 package cn.edu.gdmec.android.mobileguard.m1home.adapter;
 
 import android.content.Context;
-import android.view.TextureView;
+
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -16,7 +16,15 @@ import cn.edu.gdmec.android.mobileguard.R;
 
 public class HomeAdapter extends BaseAdapter {
 
-    int[] imageId={R.drawable.safe,R.drawable.callmsgsafe,R.drawable.app,R.drawable.trojan,R.drawable.sysoptimize,R.drawable.taskmanager,R.drawable.atools,R.drawable.settings};
+    int[] imageId={R.drawable.safe,
+                    R.drawable.callmsgsafe,
+                    R.drawable.app,
+                    R.drawable.trojan,
+                    R.drawable.sysoptimize,
+                    R.drawable.taskmanager,
+                    R.drawable.netmanager,
+                    R.drawable.atools,
+                    R.drawable.settings};
     String[]  name={"手机防盗","通讯卫士","软件管家","手机杀毒","缓存清理","进程管理","流量统计","高级工具","设置中心"};
 
     private Context context;

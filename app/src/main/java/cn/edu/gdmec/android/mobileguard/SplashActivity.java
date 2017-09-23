@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
 
         mVersion= MyUtils.getVersion(getApplicationContext());
         mTvVersion=(TextView) findViewById(R.id.tv_splash_version);
-        mTvVersion.setText("版本是："+mVersion);
+        mTvVersion.setText("版本4是："+mVersion);
 
         final VersionUpdateUtils versionUpdateUtils=new VersionUpdateUtils(mVersion,SplashActivity.this);
 
