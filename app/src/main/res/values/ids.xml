@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_setuppwd_title" type="id"/>
+    <item name="et_firstpwd" type="id"/>
+    <item name="et_affirm_password" type="id"/>
+    <item name="btn_ok" type="id"/>
+    <item name="btn_cancel" type="id"/>
+    <item name="btn_comfirm" type="id"/>
+    <item name="btn_dismiss" type="id"/>
+    <item name="tv_interpwd_title" type="id"/>
+    <item name="et_inter_password" type="id"/>
+</resources>
