@@ -119,7 +119,7 @@ public class HomeActivity extends AppCompatActivity {
                     Toast.makeText(HomeActivity.this,"可以进入手机防盗模块",Toast.LENGTH_LONG).show();
                 }else {
                     mInPswdDialog.dismiss();
-                    Toast.makeText(HomeActivity.this,"密码有误,请重新输入!", 0).show();
+                    Toast.makeText(HomeActivity.this,"密码有误1,请重新输入!", 0).show();
                 }
             }
 
