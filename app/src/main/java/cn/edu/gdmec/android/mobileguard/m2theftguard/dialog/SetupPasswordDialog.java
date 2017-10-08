@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+//import android.widget.TextView;
 
 import java.text.CollationElementIterator;
 
@@ -16,11 +17,11 @@ import cn.edu.gdmec.android.mobileguard.R;
 
 
 public class SetupPasswordDialog extends Dialog implements View.OnClickListener {
-    private TextView mTextTV;
+    private TextView mTitleTV;
     public EditText mFirstPWDET;
     public EditText mAffirmET;
     private MyCallBack myCallBack;
-    private CollationElementIterator mTitleTV;
+    //private CollationElementIterator mTitleTV;
 
 
     @Override
@@ -34,7 +35,7 @@ public class SetupPasswordDialog extends Dialog implements View.OnClickListener 
     }
 
     private void initView() {
-        mTextTV = (TextView) findViewById(R.id.tv_setuppwd_title);
+        mTitleTV = (TextView) findViewById(R.id.tv_setuppwd_title);
         mFirstPWDET = (EditText) findViewById(R.id.et_firstpwd);
         mAffirmET = (EditText) findViewById(R.id.et_affirm_password);
         findViewById(R.id.btn_ok).setOnClickListener(this);
@@ -66,6 +67,6 @@ public class SetupPasswordDialog extends Dialog implements View.OnClickListener 
      void ok();
      void cancel();
 
-     void comfirm();
+  //   void comfirm();
  }
 }

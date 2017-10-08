@@ -15,14 +15,15 @@ import cn.edu.gdmec.android.mobileguard.R;
 
 
 public class InterPasswordDialog extends Dialog implements View.OnClickListener {
-    private EditText mInterTV;
+
     private TextView mTitleTV;
+    private EditText mInterET;
     private Button mOKBtn;
     private Button mCancleBtn;
-    private SetupPasswordDialog.MyCallBack mMyCallBack;
-    private Context context;
-    private ActionBar.Tab mInterET;
     private MyCallBack myCallBack;
+    private Context context;
+//    private ActionBar.Tab mInterET;
+   // private MyCallBack myCallBack;
 
     public InterPasswordDialog(@NonNull Context context){
         super(context, R.style.dialog_custom);
@@ -37,7 +38,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
 
     private void initView() {
         mTitleTV = (TextView) findViewById(R.id.tv_interpwd_title);
-        mInterTV = (EditText) findViewById(R.id.et_inter_password);
+        mInterET = (EditText) findViewById(R.id.et_inter_password);
         mOKBtn = (Button) findViewById(R.id.btn_comfirm);
         mCancleBtn = (Button) findViewById(R.id.btn_dismiss);
         mOKBtn.setOnClickListener(this);
@@ -71,7 +72,8 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
     public interface MyCallBack{
 
 
-        void comfirm();    void cancel();
+        void comfirm();
+        void cancel();
 
     }
 

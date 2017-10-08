@@ -95,10 +95,7 @@ public class HomeActivity extends AppCompatActivity {
                 setUpPasswordDialog.dismiss();
             }
 
-            @Override
-            public void comfirm() {
 
-            }
         });
         setUpPasswordDialog.setCancelable(true);
         setUpPasswordDialog.show();
