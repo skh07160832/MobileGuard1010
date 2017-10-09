@@ -53,6 +53,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
         }
     }
 
+    
     @Override
     public void onClick(View view) {
         switch (view.getId()){
