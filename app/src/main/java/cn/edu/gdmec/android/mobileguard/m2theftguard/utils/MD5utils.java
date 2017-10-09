@@ -13,7 +13,7 @@ import java.security.NoSuchAlgorithmException;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.dialog.SetupPasswordDialog;
 
 
-public class MD5Utils {
+public class MD5utils {
 
     public static String encode(String text) {
         try {
