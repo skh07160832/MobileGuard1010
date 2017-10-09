@@ -44,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
                         }else{
                             showSetUpPswDialog();
                         }
-                        break;
+                     break;
                 }
             }
         });
