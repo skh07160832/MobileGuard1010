@@ -35,6 +35,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         initView();
     }
+    
 
     private void initView() {
         mTitleTV = (TextView) findViewById(R.id.tv_interpwd_title);
