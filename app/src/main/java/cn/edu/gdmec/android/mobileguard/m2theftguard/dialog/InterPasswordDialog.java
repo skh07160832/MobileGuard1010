@@ -28,6 +28,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
     public InterPasswordDialog(@NonNull Context context){
         super(context, R.style.dialog_custom);
         this.context = context;
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
