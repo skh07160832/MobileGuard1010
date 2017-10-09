@@ -72,7 +72,6 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
 
     public interface MyCallBack{
 
-
         void comfirm();
         void cancle();
 
