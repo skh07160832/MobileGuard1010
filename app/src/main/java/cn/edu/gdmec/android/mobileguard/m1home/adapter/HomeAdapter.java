@@ -30,7 +30,6 @@ public class HomeAdapter extends BaseAdapter {
     private Context context;
 
     public HomeAdapter(Context context){
-        
         this.context=context;
     }
 
