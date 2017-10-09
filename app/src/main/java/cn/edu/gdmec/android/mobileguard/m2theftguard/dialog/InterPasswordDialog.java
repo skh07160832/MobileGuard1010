@@ -44,6 +44,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
         mOKBtn.setOnClickListener(this);
         mCancleBtn.setOnClickListener(this);
 
+        
     }
     public void  setTitle(String title){
         if (!TextUtils.isEmpty(title)){
