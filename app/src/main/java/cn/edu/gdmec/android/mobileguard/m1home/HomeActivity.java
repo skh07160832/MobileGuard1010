@@ -15,9 +15,9 @@ import cn.edu.gdmec.android.mobileguard.R;
 import cn.edu.gdmec.android.mobileguard.m1home.adapter.HomeAdapter;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.dialog.InterPasswordDialog;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.dialog.SetupPasswordDialog;
-import cn.edu.gdmec.android.mobileguard.m2theftguard.dialog.SetupPasswordDialog;
+
 import cn.edu.gdmec.android.mobileguard.m2theftguard.utils.MD5utils;
-import cn.edu.gdmec.android.mobileguard.m2theftguard.utils.MD5utils;
+
 
 public class HomeActivity extends AppCompatActivity {
     private GridView gv_home;
@@ -40,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
                 switch (i){
                     case 0:
                         if (isSetUpPassword()){
+                            
                             showInterPswdDidlog();
                         }else{
                             showSetUpPswDialog();
