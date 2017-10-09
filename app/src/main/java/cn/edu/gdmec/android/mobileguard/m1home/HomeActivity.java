@@ -152,7 +152,6 @@ public class HomeActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(password)){
             return false;
         }
-        
         return true;
 
     }
