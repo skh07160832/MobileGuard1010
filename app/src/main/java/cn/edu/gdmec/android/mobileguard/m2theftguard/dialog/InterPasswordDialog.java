@@ -44,7 +44,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
         mOKBtn.setOnClickListener(this);
         mCancleBtn.setOnClickListener(this);
 
-        
+
     }
     public void  setTitle(String title){
         if (!TextUtils.isEmpty(title)){
@@ -59,7 +59,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
                 myCallBack.comfirm();
                 break;
             case R.id.btn_dismiss:
-                myCallBack.cancel();
+                myCallBack.cancle();
                 break;
         }
     }
@@ -74,7 +74,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
 
 
         void comfirm();
-        void cancel();
+        void cancle();
 
     }
 

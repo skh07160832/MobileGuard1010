@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
-    public void startActivity(Class<?>cls){
+    public void startActivity(Class<?> cls){
         Intent intent = new Intent(HomeActivity.this,cls);
         startActivity(intent);
     }
@@ -94,8 +94,6 @@ public class HomeActivity extends AppCompatActivity {
             public void cancel() {
                 setUpPasswordDialog.dismiss();
             }
-
-
         });
         setUpPasswordDialog.setCancelable(true);
         setUpPasswordDialog.show();
@@ -121,7 +119,7 @@ public class HomeActivity extends AppCompatActivity {
             }
 
             @Override
-            public void cancel(){
+            public void cancle(){
                 mInPswdDialog.dismiss();}
 
 
