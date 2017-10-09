@@ -70,7 +70,7 @@ public class InterPasswordDialog extends Dialog implements View.OnClickListener 
         this.myCallBack= myCallBack;
     }
 
-    
+
     public interface MyCallBack{
         void comfirm();
         void cancle();
