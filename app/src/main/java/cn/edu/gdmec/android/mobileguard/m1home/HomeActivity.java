@@ -43,7 +43,7 @@ public class HomeActivity extends AppCompatActivity {
                     case 0:
                         if (isSetUpPassword()){
 
-                            showInterPswdDidlog();
+                            showInterPswdDialog();
                         }else{
                             showSetUpPswDialog();
                         }
@@ -84,7 +84,7 @@ public class HomeActivity extends AppCompatActivity {
                     if (firstPwsd.equals(affirmPwsd)){
                         savePswd(affirmPwsd);
                         setUpPasswordDialog.dismiss();
-                        showInterPswdDidlog();
+                        showInterPswdDialog();
                     }else{
                         Toast.makeText(HomeActivity.this,"两次密码不一致",Toast.LENGTH_LONG).show();
                     }
@@ -100,7 +100,7 @@ public class HomeActivity extends AppCompatActivity {
         setUpPasswordDialog.setCancelable(true);
         setUpPasswordDialog.show();
     }
-    private void showInterPswdDidlog(){
+    private void showInterPswdDialog(){
         final String password = getPassword();
         final InterPasswordDialog mInPswdDialog = new InterPasswordDialog(
                 HomeActivity.this);
@@ -152,6 +152,7 @@ public class HomeActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(password)){
             return false;
         }
+        
         return true;
 
     }
