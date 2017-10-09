@@ -87,7 +87,6 @@ public class HomeActivity extends AppCompatActivity {
                         showInterPswdDidlog();
                     }else{
                         Toast.makeText(HomeActivity.this,"两次密码不一致",Toast.LENGTH_LONG).show();
-                        
                     }
                 }else {
                     Toast.makeText(HomeActivity.this,"密码不能为空!",Toast.LENGTH_LONG).show();
