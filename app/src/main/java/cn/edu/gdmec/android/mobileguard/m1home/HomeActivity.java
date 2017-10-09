@@ -16,7 +16,7 @@ import cn.edu.gdmec.android.mobileguard.m1home.adapter.HomeAdapter;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.dialog.InterPasswordDialog;
 import cn.edu.gdmec.android.mobileguard.m2theftguard.dialog.SetupPasswordDialog;
 
-import cn.edu.gdmec.android.mobileguard.m2theftguard.utils.MD5utils;
+import cn.edu.gdmec.android.mobileguard.m2theftguard.utils.MD5Utils;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -31,6 +31,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         getSupportActionBar().hide();
+        
         msharedPreferences = getSharedPreferences("config",MODE_PRIVATE);
         gv_home = (GridView)findViewById(R.id.gv_home);
         gv_home.setAdapter(new HomeAdapter(HomeActivity.this));
@@ -110,7 +111,7 @@ public class HomeActivity extends AppCompatActivity {
             public void comfirm() {
                 if (TextUtils.isEmpty(mInPswdDialog.getPassword())){
                     Toast.makeText(HomeActivity.this,"密码不能为空!", 0).show();
-                }else if (password.equals(MD5utils.encode(mInPswdDialog
+                }else if (password.equals(MD5Utils.encode(mInPswdDialog
                         .getPassword()))){
                     mInPswdDialog.dismiss();
                     Toast.makeText(HomeActivity.this,"可以进入手机防盗模块",Toast.LENGTH_LONG).show();
@@ -134,7 +135,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private void savePswd(String affirmPwsd){
         SharedPreferences.Editor edit = msharedPreferences.edit();
-        edit.putString("PhoneAntiTheftPWD",MD5utils.encode(affirmPwsd));
+        edit.putString("PhoneAntiTheftPWD", MD5Utils.encode(affirmPwsd));
         edit.commit();
     }
 
