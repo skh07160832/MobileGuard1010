@@ -91,6 +91,7 @@ public class HomeActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(HomeActivity.this,"密码不能为空!",Toast.LENGTH_LONG).show();
                 }
+                
             }
             @Override
             public void cancel() {
